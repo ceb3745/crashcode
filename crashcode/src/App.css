@@ -156,7 +156,7 @@ body{
   background-attachment: fixed;
   z-index: 2;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   width: 95vw;
   height: 85vh;
   background-color: #333333;
@@ -168,4 +168,8 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.titleName{
+  font-weight: bold;
 }
