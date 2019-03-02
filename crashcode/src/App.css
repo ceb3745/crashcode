@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -9,7 +13,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +34,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.textBox{
+  height: 40%;
+  width: 40%;
+  resize: none;
+}
+
+.navBar{
+  padding-top: 20px;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.homePage{
+  z-index: 2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 60vw;
+  height: 85vh;
+  background-color: #333333;
+}
+
+body{
+  font-family: 'Comfortaa', cursive;
+  z-index: 0;
+  background-image: url('assets/woodbg.png');
+  background-size: 100vw;
+}
+
+.navLink{
+  z-index: 1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  height: 2em;
+  padding-top: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #bfbfbf;
+}
+
+.navLink:hover{
+  background-color: #a6a6a6;
+}
+
+.outer{
+  align-items: baseline;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sideNavLink{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: lightgrey;
+  transform: translateY(-30px) rotate(90deg);
+  transform-origin: Left bottom 0;
+  padding: 20px;
+  cursor: pointer;
+
+}
+
+.sideNavLink:hover{
+  background-color: darkgray;
+}
+
+.sideNav{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50vh;
+  align-self: center;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
 }
