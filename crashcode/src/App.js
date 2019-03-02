@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from '../src/components/Home';
 import NavBar from '../src/components/NavBar';
+import NavBarSelected from '../src/components/NavBarSelected';
 import SideNavBar from '../src/components/SideNavBar';
 import About from '../src/components/About';
 import Glossary from '../src/components/Glossary';
@@ -100,11 +101,9 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <About />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
-                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -112,11 +111,9 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Glossary />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
-                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -124,11 +121,9 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Java />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
-                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -136,11 +131,9 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Javascript />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
-                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -148,11 +141,9 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Python />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
-                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }

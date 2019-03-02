@@ -43,7 +43,7 @@
 }
 
 .navBar{
-  padding-top: 20px;
+  padding-top: 30px;
   width: 60vw;
   display: flex;
   flex-direction: row;
@@ -153,12 +153,19 @@ body{
 .contentPage{
   background-image: url('assets/paper.png');
   background-size: 100vw;
-  border-radius: 0px 10px 10px 0px;
   background-attachment: fixed;
   z-index: 2;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   color: white;
-  width: 60vw;
+  width: 95vw;
   height: 85vh;
   background-color: #333333;
+}
+
+.navBarSelected{
+  padding-top: 30px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
