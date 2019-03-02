@@ -7,7 +7,7 @@ class SideNavBar extends Component{
 
     render(){
         return(
-            <div className="sideNav">
+            <div className="contentPage">
                 <div onMouseOver={(e) => this.props.hoverJS (e)} onClick={(e) => this.props.javascript(e)}  className="sideNavLink"> JavaScript </div>
                 <div onMouseOver={(e) => this.props.hoverJva(e)} onClick={(e) => this.props.java(e)}  className="sideNavLink"> Java </div>
                 <div onMouseOver={(e) => this.props.hoverPy(e)} onClick={(e) => this.props.python(e)}  className="sideNavLink"> Python </div>
