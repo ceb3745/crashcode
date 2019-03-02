@@ -6,8 +6,10 @@ class Glossary extends Component{
     render(){
         return(
             <div className="contentPage">
-                <div className="title">
-                    <h1> Glossary </h1>
+                <div className="titleName">
+                    <h3> Glossary </h3>
+                </div>
+                <div className="definitions">
                     <h2> Variable </h2>
                     <p> Used to store values. </p>
                     <p>Pro Tip: variable names should make sense to what they are holding </p>
@@ -21,7 +23,7 @@ class Glossary extends Component{
                     <p>A block of statements to be ran. </p>
                     <p> Pro Tip: Methods should only do one specific thing </p>
                 </div>
-            </div>
+                </div>
         );
     }
 }

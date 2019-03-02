@@ -143,6 +143,15 @@ body{
   align-self: flex-start;
 }
 
+.definitions {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80%;
+
+  text-align: left;
+  margin-left: 60px;
+}
+
 .title{
   display: flex;
   justify-content: center;
