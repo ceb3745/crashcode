@@ -149,3 +149,16 @@ body{
   align-items: center;
   padding: 90px 0px 20px 0px;
 }
+
+.contentPage{
+  background-image: url('assets/paper.png');
+  background-size: 100vw;
+  border-radius: 0px 10px 10px 0px;
+  background-attachment: fixed;
+  z-index: 2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 60vw;
+  height: 85vh;
+  background-color: #333333;
+}
