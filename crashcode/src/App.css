@@ -148,6 +148,18 @@ body{
   justify-content: center;
   align-items: center;
   padding: 90px 0px 20px 0px;
+
+  animation:
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+.titleName {
+  font-size: 30px;
+  font-weight: bold;
+
+  text-align: left;
+  padding-left: 20px;
 }
 
 .contentPage{
@@ -160,16 +172,66 @@ body{
   width: 95vw;
   height: 85vh;
   background-color: #333333;
+
+  border-radius: 10px;
 }
 
 .navBarSelected{
   padding-top: 30px;
-  width: 90vw;
+  width: 45vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-self: flex-end;
 }
 
-.titleName{
-  font-weight: bold;
+.container{
+  height: 85%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80% 20%;
+  width: inherit;
+  display:grid;
+  grid-template-areas:
+          "info console"
+          "info output" ;
+}
+
+.info{
+  text-align: left;
+  grid-area: info;
+  margin: 20px;
+}
+
+.console{
+  grid-area: console;
+  margin: 15px;
+}
+
+.output{
+  grid-area: output;
+  margin: 15px;
+}
+
+.inputBox{
+  resize: none;
+  height: 100%;
+  width: 100%;
+}
+
+.outputBox{
+  resize: none;
+  cursor: default;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }

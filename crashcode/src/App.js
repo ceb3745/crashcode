@@ -101,7 +101,7 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBarSelected language={this.state.hover} home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <About />
                     </div>
                 </div>
@@ -121,7 +121,7 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBarSelected language={this.state.hover}  home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected  home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Java />
                     </div>
                 </div>
@@ -131,7 +131,7 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBarSelected language={this.state.hover}  home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Javascript />
                     </div>
                 </div>
@@ -141,7 +141,7 @@ class App extends Component {
             return(
                 <div className="outer">
                     <div className="App">
-                        <NavBarSelected language={this.state.hover}  home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
+                        <NavBarSelected home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Python />
                     </div>
                 </div>
