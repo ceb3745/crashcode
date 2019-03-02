@@ -13,7 +13,8 @@ class App extends Component {
     constructor(){
         super();
         this.state = {
-            page: 'home'
+            page: 'home',
+            hover: ''
         }
         this.selectHome = this.selectHome.bind(this);
         this.selectAbout = this.selectAbout.bind(this);
@@ -21,6 +22,9 @@ class App extends Component {
         this.selectPython = this.selectPython.bind(this);
         this.selectJava = this.selectJava.bind(this);
         this.selectJavascript = this.selectJavascript.bind(this);
+        this.hoverPython = this.hoverPython.bind(this);
+        this.hoverJava = this.hoverJava.bind(this);
+        this.hoverJavascript = this.hoverJavascript.bind(this);
 
     }
 
@@ -60,15 +64,35 @@ class App extends Component {
         });
     }
 
+    hoverJava(){
+        this.setState({
+            hover: 'java'
+        });
+    }
+
+    hoverJavascript(){
+        this.setState({
+            hover: 'javascript'
+        });
+    }
+
+    hoverPython(){
+        this.setState({
+            hover: 'python'
+        });
+    }
+
   render() {
         if(this.state.page === 'home'){
             return(
                 <div className="outer">
                     <div className="App">
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
-                        <Home />
+                        <Home language={this.state.hover}/>
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
+
                 </div>
             );
         }
@@ -79,7 +103,8 @@ class App extends Component {
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <About />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -90,7 +115,8 @@ class App extends Component {
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Glossary />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -101,7 +127,8 @@ class App extends Component {
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Java />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -112,7 +139,8 @@ class App extends Component {
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Javascript />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
@@ -123,7 +151,8 @@ class App extends Component {
                         <NavBar home={this.selectHome} about={this.selectAbout} glossary={this.selectGlossary} />
                         <Python />
                     </div>
-                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}/>
+                    <SideNavBar java={this.selectJava} javascript={this.selectJavascript} python={this.selectPython}
+                                hoverJva={this.hoverJava} hoverJS={this.hoverJavascript} hoverPy={this.hoverPython}/>
                 </div>
             );
         }
