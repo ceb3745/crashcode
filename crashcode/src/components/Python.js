@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Python extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            errormsg: ''
+        }
+
+        this.callBack = this.callBack.bind(this);
+    }
+
 
     addTab(e){
         var o = document.getElementById("consoleBox");
@@ -31,6 +40,34 @@ class Python extends Component{
         return true;
     }
 
+    compileText(){
+        console.log("button clicked");
+        var text = document.getElementById("consoleBox").value;
+        let paiza_io = require('paiza-io');
+
+        paiza_io('python', text, '', this.callBack);
+
+    }
+
+    callBack(error, result){
+        if (error) throw error;
+        console.log('python result:');
+        console.log(result.stdout); //=> Hello, Python World!
+        this.setState({
+            errormsg: result.stdout
+        });
+
+        console.log(this.state.errormsg);
+    }
+
+    returnMessage(){
+        if(this.state.errormsg === ''){
+            return("Invalid Code: Please Try Again")
+        }else{
+            return(this.state.errormsg)
+        }
+    }
+
     render(){
         return(
             <div className="contentPage">
@@ -40,14 +77,13 @@ class Python extends Component{
                         Info
                     </div>
                     <div className="console">
-                        <textarea onKeyDown={e => this.addTab(e)} className="inputBox">
+                        <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
                             Type Code Here...
                         </textarea>
+                        <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
-                        <div  className="output">
-                            <textarea readOnly className="outputBox">
-
-                            </textarea>
+                    <div  className="output">
+                        {this.returnMessage()}
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-class Java extends Component{
-
+class Operators extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -68,10 +67,12 @@ class Java extends Component{
             return(this.state.errormsg)
         }
     }
+
+
     render(){
         return(
             <div className="contentPage">
-                <h1 className="titleName">crash_code.java</h1>
+                <h1 className="titleName">operators.py</h1>
                 <div className="container">
                     <div className="info">
                         Info
@@ -91,4 +92,4 @@ class Java extends Component{
     }
 }
 
-export default Java;
+export default Operators;
