@@ -79,7 +79,7 @@ class Loops extends Component{
             "var time = 0; \n" +
             "\n" +
             "//run the loop until the time reaches 1 minute \n" +
-            "while(time <= 60) {  \n" +
+            "while(time < 60) {  \n" +
             "  time++; \n" +
             "  console.log(time); \n" +
             "}"
@@ -100,7 +100,7 @@ class Loops extends Component{
 
                         <p className="code">var time = 0;</p>
 
-                        <p className="code">while(time &lt;= 60) &#123;</p>
+                        <p className="code">while(time &lt; 60) &#123;</p>
                         <p className="code"> time++;</p>
                         <p className="code">console.log(time);</p>
                         <p className="code">&#125;</p>
@@ -115,13 +115,13 @@ class Loops extends Component{
                         <ol> A for loop has 3 parts:
 
                         <li>The first part determines where the loop starts (var i = 0)</li>
-                        <li>The second determines where the loop stops (i &lt;= 60)</li>
-                        <li>The third increments the first statement until the second statement is true (i++)</li>
+                        <li>The second determines where the loop stops (i &lt; 60)</li>
+                        <li>The third increments the first statement until the second statement is no longer true (i++)</li>
                         </ol>
 
                         <p> Each of these statements are separated by semicolons and placed within the () of the for loop</p>
 
-                        <p className="code">for(var i = 0; i &lt;= 60; i++) &#123;</p>
+                        <p className="code">for(var i = 0; i &lt; 60; i++) &#123;</p>
                         <p className="code"> time = i;</p>
                         <p className="code"> console.log(time);</p>
                         <p className="code">&#125;</p>
