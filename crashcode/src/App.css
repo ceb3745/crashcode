@@ -290,6 +290,43 @@ body{
   flex-direction: row;
 }
 
+.stickerHeart{
+  width: 175px;
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  height: auto;
+}
+
+.stickerLightning{
+  width: 100px;
+  position: absolute;
+  left: 22%;
+  bottom: 35%;
+  height: auto;
+}
+
+.stickerLizard{
+  width: 160px;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  height: auto;
+}
+
+.pencil{
+  width: 250px;
+  position: absolute;
+  transform: rotate(5deg);
+  right: 0%;
+  bottom: 0%;
+  height: auto;
+}
+
+body{
+  overflow: hidden;
+}
+
 .code{
   padding-left: 5px;
   font-family: "Courier New";
