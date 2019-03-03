@@ -68,7 +68,11 @@ class Variables extends Component{
         }
     }
 
-
+    addText(){
+        return(
+            "# assign your name to a variable \n\n\n# print your name\n\n\n# reassign your name variable to the name of a friend\n\n\n# print the name of your friend\n\n\n# assign your age to a variable\n\n# print your age\n\n\n# reassign your age variable to your friends age\n\n\n# print your friend's age" 
+        )
+    }
     render(){
         return(
             <div className="contentPage">
@@ -113,21 +117,7 @@ class Variables extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                        # assign your name to a variable 
-
-                        # print your name 
-
-                        # reassign your name variable to the name of a friend
-
-                        # print the name of your friend 
-
-                        # assign your age to a variable 
-
-                        # print your age 
-
-                        # reassign your age variable to your friends age
-
-                        # print your friend's age 
+                            {this.addText()}
 
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
