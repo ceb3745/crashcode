@@ -9,7 +9,8 @@ class Glossary extends Component{
                 <div className="titleName">
                     <h3> Glossary </h3>
                 </div>
-                <div className="definitions">
+            <div id="glossTerms">
+                <div className="definitions1">
                     <h2> Variable </h2>
                     <p> Used to store values. </p>
                     <p>Pro Tip: variable names should make sense to what they are holding </p>
@@ -22,6 +23,8 @@ class Glossary extends Component{
                     <h2> Methods </h2>
                     <p>A block of statements to be ran. </p>
                     <p> Pro Tip: Methods should only do one specific thing </p>
+                </div>
+                <div className="definitions2">
                     <h2>Char</h2>
                     <p>A single numeric or alphabetic character</p>
                     <h2>String</h2>
@@ -36,7 +39,8 @@ class Glossary extends Component{
                     <p>A potentially very large decimal number that can be positive or negative</p>
 
                 </div>
-                </div>
+            </div>
+         </div>
         );
     }
 }
