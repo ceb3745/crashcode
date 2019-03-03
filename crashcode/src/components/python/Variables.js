@@ -75,48 +75,11 @@ class Variables extends Component{
                 <h1 className="titleName">variables.py</h1>
                 <div className="container">
                     <div className="info">
-                    <p>Variables are used to store value. It's kind of like placing something inside of a box. 
-                    We do this so we can easily access values later in our programs </p>
-                    
-                    <p>If you have programmed in other languages, then you might've had to declare what type of data you
-                    plan to store in your variable. In Python we don't have to say what the variable will hold. We can just use it. </p>
-
-                    <p>Variable name should make sense to what it is holding.</p>
-
-                    <p>In Python we use snake_case when naming our variables to make our variables easy to read. This means the name is all lower case and _ in place of spaces.</p>
-
-                    <p>Examples:</p>
-
-                    <p>We can assign many different types of data to a variable. Here are a few examples</p>
-
-                    <p>We can assign an integer to a variable</p>
-
-                    <p className="code"> num_of_months = 12 </p>
-                    
-                    <p>Float values:</p>
-
-                        <p className="code">weight_of_cat = 6.77</p>
-
-                    <p>We can also assign strings to a variable. Strings are sequences of characters. 
-                    They're kind of like sentences. You know it's a string because it has " " marks around it.</p>
-
-                    <p className="code">  my_cats_name = "The Kraken"</p>  
-
-
-                   <p> We can also reassign variables to contain new data. Say I changed my cat's name to Garfield and I want to change it. I can easily do that. </p>
-
-                    <p className="code">   my_cats_name = "Garfield" </p>
-
-                    <p>Be careful to not reuse a variable name, unless you actually want to reassign it, otherwise your data will be lost! </p>
-
-                   <p>We can print our variables to the console. The console is where you can see output from your code or error messages if something went wrong. On crashcode the console is the little box on the bottom right. To print to the console with python we use the print() command. Just put the variable to print between the () </p> 
-
-                    <p className="code">print(my_cats_name)</p> 
-
+                        Info
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            
+                            Type Code Here...
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
@@ -124,6 +87,7 @@ class Variables extends Component{
                         {this.returnMessage()}
                     </div>
                 </div>
+            </div>
         );
     }
 }
