@@ -81,30 +81,30 @@ class Operators extends Component{
                 <div className="container">
                     <div className="info">
                         <p>Let's do math in Python! </p>
-                        <p>We can add, subtract, multiply, divide, get the remainder and use exponents in a variable</p>
+                        <p>We can <span className="keywordO">add</span>, <span className="keywordO">subtract</span>, <span className="keywordO">multiply</span>, <span className="keywordO">divide</span>,<span className="keywordO"> get the remainder</span> and use <span className="keywordO">exponents</span> in a variable</p>
                         <p>Let's do math with the following variables and capture the answer in variables. </p>
                         <div className="code">a = 5</div>
                         <div className="code">b = 2</div>
 
-                        <p>We can add them together.</p>
+                        <p>We can <span className="keywordO">add</span> them together.</p>
                         <div className="code">addition = a + b</div>
 
-                        <p>We can subtract them.</p>
+                        <p>We can <span className="keywordO">subtract</span> them.</p>
                         <div className="code">subtract = a + b</div>
 
-                        <p>We can multiply them.</p>
+                        <p>We can <span className="keywordO">multiply</span> them.</p>
                         <div className="code">multiply = a * b</div>
 
-                        <p>We can divide them. Note this may result in a float(decimal).</p>
+                        <p>We can divide them. Note this may result in a <span className="keywordO">float(decimal)</span>.</p>
                         <div className="code">divide = a / b</div>
 
-                        <p>We can also do integer division. This will always give a whole number that is rounded down.</p>
+                        <p>We can also do <span className="keywordO">integer division</span>. This will always give a whole number that is rounded down.</p>
                         <div className="code">int_divide = a // b</div>
 
-                        <p>We can calculate the exponent of 2 numbers. The left side is the base and the right side is the exponent </p>
+                        <p>We can calculate the <span className="keywordO">exponent</span> of 2 numbers. The left side is the base and the right side is the exponent </p>
                         <div className="code">exp_a_b = a ** b <br></br> exp_b_a = b ** a </div>
 
-                        <p>We can also use the modulo operator. This will give you the remainder from long division </p>
+                        <p>We can also use the <span className="keywordO">modulo</span> operator. This will give you the remainder from long division </p>
                         <div className="code">mod_a_b = a % b <br></br> mod_b_a = b % a</div>
 
                         <p>Let's print them out and get the answers! </p>
