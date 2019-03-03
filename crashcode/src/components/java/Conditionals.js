@@ -77,9 +77,10 @@ class Conditionals extends Component{
             "// Practice Here! \n\n" +
             "public class Main { \n" +
             "   public static void main(String[] args){ \n" +
+            "     System.out.println(\"Hello!\"); \n\n" +
             "// write an if else statement that checks if flag is true and if true, prints 'Flag is true' //else, 'Flag is false'\n\n\n" +
             "// write an if else statement that checks if 'number' is divisible by 15, then 22 and then print // 'not divisible by 15 or 22'\n" +
-            "// if it's divisible by 15, print 'Number is divisible by 15', and if it's divisible by 22, print // 'Number is divisible by 22'\n\n\n" +
+            "// if it's divisible by 15, print 'Number is divisible by 15', and if it's divisible by 22,  \n// print 'Number is divisible by 22'\n\n\n" +
             "   } \n}"
             
         )
