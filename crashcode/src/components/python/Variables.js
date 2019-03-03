@@ -75,7 +75,10 @@ class Variables extends Component{
                 <h1 className="titleName">variables.py</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p> Variables are used to store value.</p>
+                        <p> It's kind of like placing something inside of a box.</p>
+                        <p>We do this so we can easily access values later in our programs</p>
+                        <p>If you have programmed in other languages, then you might've had to declare what type of data you plan to store in your variable. In Python we don't have to say what the variable will hold. We can just use it. </p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
