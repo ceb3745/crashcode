@@ -1,0 +1,275 @@
+Variables
+
+In javascript variables are containers for storing any data value. If you want
+to store a number or phrase for use later you can create a variable using the
+keyword 'var'. A keyword is a word reserved by the language to have a specific
+meaning. You follow the keyword var with a name of your choice. 
+
+*This is the only time you will put the keyword 'var' in front of name. 
+
+var name;
+
+This creates a variable called name. Currently, name doesn't have a value.
+Think of name like an empty box that you might want to put something inside of.
+
+In order to assign name a value, or put something in the box, you must use the
+equal operator followed by the assignment. In javascript there are many different
+things we can 'put' inside of name, for now we will put a string. We will surround
+the value we want inside of our variable in double quotation marks.
+
+String: A string of characters, like a word or sentence.
+
+name = "chris";
+
+If you use the equal operator again using the variable 'name' you will change
+what you put previously
+
+name = "paul";
+
+The value stored in name will now be paul.
+
+You may also put a number inside of a variable. In this case we do not use quotation marks.
+If you put a number inside of a quotation marks it will be considered a string, and you
+will be unable to do math with it (add, subtract, divide, etc.).
+
+var age = 3;
+
+or a character (usually refered to as char). In this case we use single quotation marks.
+
+var letter = 'a';
+
+There is another keyword used to define variables in javascript. This keyword is the
+'const' keyword. When you use the const keyword the initial value cannot be changed.
+
+'const' is most useful for values that will not change (PI, Gravity, etc.).
+
+const PI = 3.14;
+
+When naming a variable, the name should represent what the use of that variable is (numberOfClothes, catNames, etc). This way,
+anyone else reading your code will understand what it does. Also as you may have noticed in those examples, javascript uses a naming convention
+called camelcase. This means that the first word in your variable name will be lowercase, and the following words
+will be capitalized. 
+
+var camelCase = "this is an example of a variable name in camelcase";
+
+The variable above both correctly uses camelcase, and the name explains the purpose of the
+variable. This is a good variable name.
+
+Finally, throughout these examples you may have noticed the use of a semicolon, ";", after each line of code. The semicolon is what
+tells the program that the line of code is complete. Javascript does not technically require the use of the semicolon, however
+as you learn more coding languages it's good to know how to use it.
+
+Operators
+
+Operators in javascript are what allow us to preform most basic math. For these examples, we will
+be using the following variables. firstNumber and secondNumber has been assigned number values, while we will 
+assign operator a value later.
+
+var firstNumber = 5;
+var secondNumber = 10;
+var operator; 
+
+For addition, you can add two numerical variables or numbers together like how you would in math class.
+
+operator = 10 + 5 (operator = 15) OR operator = firstNumber + secondNumber (operator = 15)
+
+Subtraction works the same way:
+
+operator = 10 - 5 (operator = 5) OR operator = firstNumber - secondNumber (operator = 5)
+
+If you want to use subtraction or addition on a variable without creating a new one to store the outcome, it would look like the following:
+
+firstNumber = firstNumber + 5; (firstNumber = 10)
+firstNumber = firstNumber - 5; (firstNumber = 5)
+
+This can also be simplified by placing the addition or subtraction operator in front of the = sign and placing only
+the value you want to add or subtract after it
+
+firstNumber += 5; (firstNumber = 10)
+firstNumber -= 5; (firstNumber = 5)
+
+Javascript also contains operators to handle multiplication:
+
+operator = 10 * 5 (operator = 50) OR operator = firstNumber * secondNumber (operator = 50)
+
+and division:
+
+operator = 10 / 5 (operator = 2) OR operator = firstNumber / secondNumber (operator = 2)
+
+These can also be used without creating a new variable to store the outcome and also simplified
+firstNumber = firstNumber * 5; (firstNumber = 25)
+firstNumber = firstNumber / 5; (firstNumber = 1)
+
+firstNumber *= 5; (firstNumber = 25)
+firstNumber /= 5; (firstNumber = 1)
+
+The division operator can be used to divide any number, with numbers that can't be divided evenly resulting
+in a decimal. If you want to get the remainder of a divison, the modulus (%) operator can be used.
+
+secondNumber = secondNumber % firstNumber (this will return 0 as 10/5 divides evenly)
+secondNumber %= firstNumber
+
+Some operators you may see are greater than (>), less than (<), greater than or equal to (>=), less than or equal to (<=),
+increment (++), decrement (--), equal to (==), or not equal to (!=). These and more will be covered in the conditionals 
+and loops sections.
+
+conditionals
+
+Another variable type in javascript is called a boolean. These variables can only have of of two values, true
+or false. Conditonals are what we use to run pieces of code depending on if a condition is met. Incidentally, 
+one version of a conditional is called an "if" statement. 
+
+We're going to be use the boolean representing a light switch for this example.
+
+var lightSwitch = true; (light is ON)
+
+Now to begin writing our if statement, we are first going to check if the light is ON (true)
+
+if(lightSwitch == true) {
+	console.log("The light is ON"); 
+}
+
+There are a few new things happening here. First, after the keyword "if" is two parentheses () between which you put
+the condition you want to be met to run the code between the curly braces {}. Here, we see two new operators:
+
+The double equal, ==, checks if the variable is equal to the condition of "true", we don't use = as the single equal sign
+assigns a new value to the variable, which would override the current value. If we want to check if something is NOT true,
+we use the "not" operator (!) in front of a single equal, which creates the "not equal to" operator, !=.
+
+So, IF our boolean lightSwitch's value is true, then the console.log("the light is ON"); code is run. On crash_code, the console for you is located below where you're typing your code. At the top of this sidebar, select "console". This is the console, where you can see error messages if
+there is problems with your code, or you can use console.log(your variable or string here); to print a message to the console.
+
+Next, we're going to print a message to the console if the light is OFF (false). This can be done in two ways.
+
+if(lightSwitch == true) {
+	console.log("The light is ON");
+} else {
+	console.log("The light is OFF");
+}
+
+The first way is to use the keyword "else". So if the program checks if the first statement is true and it's false, it will run the code in the "else" section.
+Since lightSwitch is currently true, the code within the else will NOT run. 
+
+What if we wanted to check something else though? What if we wanted to check the value of a number? Let's
+continue with a new variable, called num.
+
+var num = 5;
+
+First, we're going to check if num is 10 using what we learned aboved. Since num does not equal 10, this will be false.
+
+if(num == 10) {
+	console.log("num is 10!");
+}
+
+Now, we could just use "else" to determine if num isn't 10. However, say now we want to determine is num is greater than or less than 10.
+
+if(num == 10) {
+	console.log("num is 10!");
+} else if ( num > 10) {
+	console.log("num is bigger than 10!");
+} else if (num < 10) {
+	console.log("num is less than 10!");
+}
+
+This conditinal statement is the "else if" statement. It's similar to else, however it allows you to check another, different
+condition from what you checked in your initial if statement. Here, we use the greater than (>) and less than (<) operators to
+check if num is bigger or smaller than ten. You can also use the greater than or equal to (>=) or the less than or equal to (<=)
+operators here. Again, these can only be true or false, as num is either greater or less than ten or not.
+
+If num runs through all three statements and still does not return true, we can now use "else" to determine num is NOT a number, as any
+possible number would have fulfilled one of the three conditions. In this case, "else" is great for catching errors. 
+
+if(num == 10) {
+	console.log("num is 10!");
+} else if ( num > 10) {
+	console.log("num is bigger than 10!");
+} else if (num < 10) {
+	console.log("num is less than 10!");
+} else {
+	console.log("num is not a number");
+}
+
+You can also combine conditions using the "and" (&&) or the "or" (||) operators. For "or", one or both condition
+has to be ture for its code to run. "And' requires BOTH conditions to be true for its code to run.
+
+if(num > 10 || num < 10) {
+	console.log("num is not 10");
+} 
+
+This uses "or", meaning that its code will run if num is > 10 OR < 10, so it checks both at the same time
+
+if(boyAge == 10 && boyName == "Tom") {
+	console.log("Tom is 10 years old");
+}
+
+This uses "and", meaning that the boy's name must be Tom AND his age must be 10, otherwise the statement "Tom is 10 years old"
+will not print as BOTH statements are not true.
+
+loops
+
+Loops are used to run code multiple times. However, loops MUST END at some point. Loops that are infinite, or
+continue forever, will crash your program. In javascript, there are two main types of loops.
+
+The first loop is the "while" loop. This loop will continue to run while its condition is true. For this example, 
+we are going to check the time until we reach 1 minute.
+
+var time = 0;
+
+while(time <= 60) {
+	time++;
+	console.log(time);
+}
+
+This loop above is very simple, with the statement in the while loop's () checking if watchButton's value is true. As long as watchButton's value is
+true, it will apply the increment (++) operator to our time variable. The way ++ works is simple, it simply adds
++1 to the value of the variable. So, we keep adding +1 to time until we reach time = 60 and the loop stops. You can also subtract -1 from the value each loop by 
+using the decrement operator (--). 
+
+While loops are great for anything that can be true or false, but what if we wanted to do it another way? In that case, we would use what is known as a "for" loop. 
+
+A for loop has 3 parts:
+
+The first part determines where the loop starts (var i = 0)
+The second determines where the loop stops (i >= 60)
+The third increments the first statement until the second statement is true (i++)
+
+Each of these statements are seperated by semicolons and placed within the () of the for loop
+
+for(var i = 0; i >= 60; i++) {
+	time = i;
+	console.log(time);
+}
+
+This will give you exactly the same output as the while loop, but approaches it in a different way.
+
+methods
+
+If you want to use the same code over and over, instead of copy and pasting it, it's better to instead use what
+is known as a "method" or "function". 
+
+First, we have to create the function that will hold the code we want to repeat. The name of your function should follow the same
+standards of variable names, it should explain what it does and be in camelcase. 
+
+Lets create a function to do some simple math for us. 
+
+console.log(doMath(1, 5, 10));
+var answer = doMath(-10, 20, 2);
+
+function doMath(number1, number2, number3) {
+	var total = number1 + number 2 + number3;
+	return total;
+}
+
+here's a breakdown of all the parts you're seeing above:
+
+function doMath() {} is how to create a basic function, all functions must be start with the keyword function, followed by its name, then () which holds
+what are called parameters and the {} that contains your code.
+
+Above our function call, we see the name of our function with three numbers between it's (). This is a "function call", which is how we get our function to run. 
+Just creating the function does nothing, you also need to call it for anything to happen. 
+
+Our parameters are number1, number2, and number3. As you can see in our function call, these act as variables where the user can pass in different values in the function call which then are assigned
+to number1, number2, and number3 for use within the function. This is what allows the function to be used multiple times instead of copy and pasting the math formula with different numbers each time.
+
+Finally, return does exactly that. It returns the value of total into the function name. That means when doMath is called, it's value is equal to whatever the value of total is.
+So our first function call will print "16" to the console since total = 16, and for our second call the variable answer will be equal to 12 since total = 12.

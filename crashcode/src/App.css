@@ -218,6 +218,8 @@ body{
   text-align: left;
   grid-area: info;
   margin: 20px;
+
+  overflow-y: scroll;
 }
 
 .console{
@@ -325,4 +327,8 @@ body{
 
 body{
   overflow: hidden;
+}
+
+.keyword {
+  background-color: lightgrey;
 }
