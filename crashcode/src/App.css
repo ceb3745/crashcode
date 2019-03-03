@@ -262,17 +262,6 @@ body{
   font-size: 15px;
 }
 
-/*css sourced from https://css-tricks.com/snippets/css/typewriter-effect/*/
-@keyframes typing {
-  from { width: 0 }
-  to { width: 55% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
 
 .compileButton{
   margin: 5px;
@@ -389,4 +378,16 @@ body{
   padding-left: 75px;
   font-family: "Courier New";
   font-size: 17px;
+}
+
+/*css sourced from https://css-tricks.com/snippets/css/typewriter-effect/*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 55% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
