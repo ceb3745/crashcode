@@ -46,7 +46,7 @@ class Java extends Component{
         var text = document.getElementById("consoleBox").value;
         let paiza_io = require('paiza-io');
 
-        paiza_io('python', text, '', this.callBack);
+        paiza_io('java', text, '', this.callBack);
 
     }
 
