@@ -89,7 +89,7 @@ class Loops extends Component{
                         <p className="code">int i = 0; <br /> 
                         while (i &lt; 5)&#123; <br /> </p>
                         <p className="inner">System.out.println(“Hi”); <br /> i++; <br /> </p>
-                        <p>&#125; <br /> </p>
+                        <p className="code">&#125; <br /> </p>
 
                     </div>
                     <div className="console">

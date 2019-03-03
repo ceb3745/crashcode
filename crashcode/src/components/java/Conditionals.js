@@ -78,10 +78,11 @@ class Conditionals extends Component{
                         <p>Conditionals are important when you want to do something only when a certain condition is met. 
                             This is normally done by checking a value of a variable (such as a boolean) and potentially comparing it to another value (such as an int). 
                             The condition must return true in order for the code within the if statement to execute. 
-                            If there are more than one condition you want to check, simple add an ‘else if’ block. 
-                            Common operators for comparing values are equals to (‘==‘), not equals to (‘!=‘), greater than (‘&#62;’), 
+                            If there are more than one condition you want to check, simple add an ‘else if’ block. </p>
+                            <p>Common operators for comparing values are equals to (‘==‘), not equals to (‘!=‘), greater than (‘&#62;’), 
                             less than (‘&#60;’), greater than or equal to (‘&ge;‘) and less than or equal to 
-                            (‘&le;‘). To check if more than one condition is met (so that everything within the parentheses is true) 
+                            (‘&le;‘). </p>
+                            <p>To check if more than one condition is met (so that everything within the parentheses is true) 
                             within the if statement, use the and (‘&amp;&amp;’) operator. If you have multiple conditions but only need one of them to be true use the or (‘||’) operator.</p>
                             <p>The basic structure for an if statement: </p>
                             <p className="code">if (check for condition here) &#123; <br /> //some code here <br />&#125; <br />

@@ -75,9 +75,13 @@ class Methods extends Component{
                 <h1 className="titleName">methods.java</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Similar to variables, method headers (where the method is defined) requires the data type that the method returns (if the method doesn’t return a value, declare the method as void). Returning a value means that when the method is run, a value is produced and can be used elsewhere. The first word in the method header is either public or private, which specifies where the method can be used. The second word is the data type and is followed by the method name and a set of parentheses. Inside any number of values can be inside the parentheses to be used within the method. Of course, the data type of the variables must be specified.</p>
+                        <p>Similar to variables, method headers (where the method is defined) requires the data type that the method returns (if the method doesn’t return a value, declare the method as void). </p>
+                             <p>Returning a value means that when the method is run, a value is produced and can be used elsewhere. The first word in the method header is either public or private, which specifies where the method can be used. The second word is the data type and is followed by the method name and a set of parentheses. </p>
+                                 <p>Inside any number of values can be inside the parentheses to be used within the method. Of course, the data type of the variables must be specified.</p>
                         <p>Ex:</p>
-                        <p className="code">public int calculateSum(int a, int b) &#123; <br />return a + b; <br />&#125; <br /></p>
+                        <p className="code">public int calculateSum(int a, int b) &#123; <br /> </p>
+                        <p className="inner">return a + b; <br /> </p>
+                        <p className="code">&#125; <br /></p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
