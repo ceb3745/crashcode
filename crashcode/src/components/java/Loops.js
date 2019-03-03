@@ -68,6 +68,15 @@ class Loops extends Component{
         }
     }
 
+    addText() {
+        return (
+            " Practice Here! \n\n" +
+            "// declare a for loop with an int called i starting at 0 and and incrementing until reaching 10 \n" +
+            "// print each value\n\n\n" +
+            "// do the same thing but with a while loop, and declare an int called 'x'\n// hint: don't forget to increment x"
+        )
+    }
+
 
     render(){
         return(
@@ -75,11 +84,26 @@ class Loops extends Component{
                 <h1 className="titleName">loops.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>If you want to do a process more than once, a loop is right for you! In Java, there are two common loops, a ‘for’ loop and a ‘while’ loop. A for loop uses an int to keep track of how many times the block of code is ran.</p>
+                        <p>The part within the parentheses of the for loop consists of three statements, an initialization, a testing condition, and a the increment/decrement)</p>
+                        <p>The increment operator (‘++’) increases the variable by 1 and the decrement operator (‘--‘) decreases the variable by 1. </p>
+                        <p>Note: the for loop can be incremented or decremented by a value other than 1. </p>
+                        <p>Ex: </p>
+                        <p className="code">for (int i = 0; i &lt; 5; ++i) &#123; <br /> </p>
+                        <p className="inner">System.out.println(“Hi”); <br /></p>
+                        <p className="code">&#125;  <br /></p>
+                        <p>In this example, “Hi” will be printed 5 times. </p>
+                        <p>A while loop uses a boolean. A while loop will run until the condition within the parentheses is false. (A loop that is never turned to false is called an infinite loop and will run forever so avoid that condition!) A while loop and a for loop can do the same thing, just with different formatting. </p>
+                        <p>(Same example from above)</p>
+                        <p className="code">int i = 0; <br /> 
+                        while (i &lt; 5)&#123; <br /> </p>
+                        <p className="inner">System.out.println(“Hi”); <br /> i++; <br /> </p>
+                        <p className="code">&#125; <br /> </p>
+
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

@@ -68,6 +68,23 @@ class Variables extends Component{
         }
     }
 
+    addText(){
+        return(
+            "//Practice here! \n \n \n" +
+            "// declare an int variable called 'number' \n \n \n" +
+            "// set int variable to 5 \n \n \n " + 
+            "//print number \n \n \n" + 
+            "// change value of 'number' to 15 \n \n \n" +
+            "//print number \n \n \n" + 
+            "//declare a String variable called hello\n \n \n" +
+            "// set value of hello to 'Hello World'\n \n \n" +
+            "//print hello\n \n \n" +
+            "//declare a boolean called 'flag'\n \n \n" +
+            "//set value of flag to true\n \n \n" + 
+            "//print flag\n \n \n"
+        )
+    }
+
 
     render(){
         return(
@@ -75,11 +92,19 @@ class Variables extends Component{
                 <h1 className="titleName">variables.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>Basic variable types in Java include integers (int), 
+                            strings (String), doubles (double), floats (float), chars (char), and booleans (boolean). 
+                            An int is an integer (a whole number that can be positive or negative), a string is a set of characters (i.e ‘abc’) 
+                            that is surrounded by double quotation marks, floats are a type of decimal, chars are individual characters (i.e ‘c’), 
+                            and booleans can either be true or false.</p>
+                        <p>Each variable must be declared with its type and name before it can be used, such as ‘String string’. To assign it to a 
+                            value simply add an equals sign (‘=‘) after the name and then the value you’d like to set the variable to.</p>
+                        <p>Ex: </p>
+                        <p className="code">String string = “hello!”;</p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
