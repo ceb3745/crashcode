@@ -68,6 +68,11 @@ class Methods extends Component{
         }
     }
 
+    addText(){
+        return(
+            "# write a function to sum up 3 numbers \n\n\n# write a function to negate a number (Hint: num * -1) \n\n\n# write a function to print a string \n"
+        )
+    }
 
     render(){
         return(
@@ -75,11 +80,37 @@ class Methods extends Component{
                 <h1 className="titleName">methods.py</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>In programming we use functions to create reusable blocks of code. They are usally related to a single action. It stops us from having to retype the same code over and over.</p>
+                        <p>Code:</p>
+                        <div className="code">
+                        def cubed(num):<br></br>
+                            <div className="inner">
+	                        cube = num ** 3 <br></br>
+	                        return cube<br></br>
+                        </div>
+                        answer = cubed(3)<br></br>
+                        print(answer)<br></br>
+                        answer2 = cubed(5)
+                        print(answer2)
+                        </div>
+
+                        <p>Output:</p>
+                        <div className="code"> 27 <br></br> 8</div>
+
+                        <p>So here's what's going on here?</p>
+
+                        <p>So create a function in python we write def followed by the name of the function and ( ): </p>
+                        <p>We can give the function parameters. That's what goes inside of the ( ). Parameters are data that we give to the functions to use. </p>
+                        <p>Note: If we say a function has a parameter when we define it, then we can't use it without those parameters. </p>
+                        <p>Just like we did with the conditional statements and loops, we indent the code so python knows the code belongs to that function. </p>
+                        <p>The word return will send back data that we can capture in a variable. </p>
+                        <p>Try making your own functions!</p>
+
+
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

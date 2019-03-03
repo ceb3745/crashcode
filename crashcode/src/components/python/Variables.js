@@ -70,7 +70,7 @@ class Variables extends Component{
 
     addText(){
         return(
-            "# assign your name to a variable \n\n\n# print your name\n\n\n# reassign your name variable to the name of a friend\n\n\n# print the name of your friend\n\n\n# assign your age to a variable\n\n# print your age\n\n\n# reassign your age variable to your friends age\n\n\n# print your friend's age" 
+            "# assign your name to a variable \n\n\n# print your name\n\n\n# reassign your name variable to the name of a friend\n\n\n# print the name of your friend\n\n\n# assign your age to a variable\n\n\n# print your age\n\n\n# reassign your age variable to your friends age\n\n\n# print your friend's age" 
         )
     }
     render(){

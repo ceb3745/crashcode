@@ -11,6 +11,7 @@ class Python extends Component{
     }
 
 
+
     addTab(e){
         var o = document.getElementById("consoleBox");
         var kC = e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which;
@@ -68,6 +69,8 @@ class Python extends Component{
         }
     }
 
+
+
     render(){
         return(
             <div className="contentPage">
@@ -87,7 +90,7 @@ class Python extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            print('Hello World')
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

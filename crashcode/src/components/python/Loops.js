@@ -68,6 +68,11 @@ class Loops extends Component{
         }
     }
 
+    addText(){
+        return(
+            "# write a for range loop to print the odd numbers between 1 - 20 \n\n\n# write a for in loop through your name \n\n\n# write a while loop to print all even numbers between 1 - 20 \n"
+        )
+    }
 
     render(){
         return(
@@ -75,11 +80,63 @@ class Loops extends Component{
                 <h1 className="titleName">loops.py</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>Loops are used when we need to do a set of instructions more than once. They run until some condition has met.</p>
+                        <p><b><u>For Loops</u></b></p>
+                        <p>for loops come in a few different flavors in python</p>
+                        <p><u>for in</u> - these are used to run through each element of an item</p>
+                        <p>for example we can loop through every character in a string</p>
+                        <div className="code">
+
+                            for letter in "gecko":
+                                <div className="inner">print(letter)</div>
+                        </div>
+
+                        <p><u>for range</u> - this allows us to loop through a range of numbers. range always needs to know when to stop, but we can also specifiy where to start the range and how to count/step through the values</p>
+                        
+                        <p>First we will just give range a stop. Range will count up to but not include the stop value. Since we did not give a start value, it will start counting from 1 </p>
+                        <div className="code">
+                            # prints 1 - 10, notice we give range 11 to stop<br></br>
+                            for number in range(11)<br></br>
+                                <div className="inner">print(number)</div>
+                        </div>
+
+                        <p>Next we will give range a start and stop value</p>
+                        <div className="code">
+                            # prints 20 - 29  <br></br>
+                            for number in range(20, 30)<br></br>
+                                <div className="inner">print(number)</div>
+                        </div>
+
+                        <p>Next we will give range a start, stop and step to print all even numbers between 2- 20</p>
+                        <div className="code">
+                            # prints even numbers between 2 - 20  <br></br>
+                            for number in range(2, 21, 2)<br></br>
+                                <div className="inner">print(number)</div>
+                        </div>
+
+                        <p><b><u>While Loops</u></b></p>
+                        <p>while loops will go until a certain condition is met. Usually we use a counter and have the loop execute that many times. So we need a variable to count for us. Make sure to increment this counter every time otherwise your loop will run forever!</p>
+                        <div className="code">
+                            # print 1 - 10  <br></br>
+                            i = 1 <br></br>
+                            while i &lt;= 10:<br></br>
+                                <div className="inner">print(i)<br></br>i = i + 1</div>
+                                
+                        </div>
+                        
+                        <p>We can also count down and increment at different intervals</p>
+                        <div className="code">
+                            # print odd numbers between 1 - 19 in descending order  <br></br>
+                            i = 19 <br></br>
+                            while i &gt;= 0:<br></br>
+                                <div className="inner">print(i)<br></br>i = i - 2</div>
+                                
+                        </div>
+
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                           {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
