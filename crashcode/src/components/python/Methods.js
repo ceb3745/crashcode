@@ -85,7 +85,7 @@ class Methods extends Component{
                 <h1 className="titleName">methods.py</h1>
                 <div className="container">
                     <div className="info">
-                        <p>In programming we use functions to create reusable blocks of code. They are usally related to a single action. It stops us from having to retype the same code over and over.</p>
+                        <p>In programming we use <span className="keywordM">functions</span> to create reusable blocks of code. They are usally related to a single action. It stops us from having to retype the same code over and over.</p>
                         <p>Code:</p>
                         <div className="code">
                         def cubed(num):<br></br>
@@ -104,11 +104,11 @@ class Methods extends Component{
 
                         <p>So here's what's going on here?</p>
 
-                        <p>So create a function in python we write def followed by the name of the function and ( ): </p>
-                        <p>We can give the function parameters. That's what goes inside of the ( ). Parameters are data that we give to the functions to use. </p>
+                        <p>So create a function in python we write <span className="keywordM">def</span> followed by the <span className="keywordM">name</span> of the function and <span className="keywordM">( ):</span>  </p>
+                        <p>We can give the function <span className="keywordM">parameters</span>. That's what goes inside of the ( ). Parameters are data that we give to the functions to use. </p>
                         <p>Note: If we say a function has a parameter when we define it, then we can't use it without those parameters. </p>
-                        <p>Just like we did with the conditional statements and loops, we indent the code so python knows the code belongs to that function. </p>
-                        <p>The word return will send back data that we can capture in a variable. </p>
+                        <p>Just like we did with the conditional statements and loops, we <span className="keywordM">indent</span> the code so python knows the code belongs to that function. </p>
+                        <p>The word <span className="keywordM">return</span> will send back data that we can capture in a variable. </p>
                         <p>Try making your own functions!</p>
 
 
