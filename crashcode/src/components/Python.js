@@ -85,11 +85,11 @@ class Python extends Component{
                         <p> Welcome to learning Python! </p>
                         <p> Here's some general information about Python to keep in mind as your learning!</p>
                         <p>If some of the information doesn't make sense, don't worry! Come back after the lessons</p>
-                        <p>Programmers comment their code to make it easy to understand what is going on</p>
+                        <p>Programmers <span className="keywordM">comment</span> their code to make it easy to understand what is going on</p>
                         <p>A comment in python is followed by #</p>
                         <div className="code"># this is a comment</div>
                         <p>Anything that is a comment won't get run as code</p>
-                        <p>In Python we use snake_case when naming our variables and functions to make things easy to read. This means the name is all lower case and has _ in place of spaces. </p>
+                        <p>In Python we use <span className="keywordM">snake_case</span> when naming our variables and functions to make things easy to read. This means the name is all lower case and has _ in place of spaces. </p>
                         <p></p>
                     
                     </div>
