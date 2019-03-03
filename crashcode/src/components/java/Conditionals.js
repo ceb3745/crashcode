@@ -68,6 +68,16 @@ class Conditionals extends Component{
         }
     }
 
+    addText() {
+        return (
+            "// Practice Here! \n\n" +
+            "// write an if else statement that checks if flag is true and if true, prints 'Flag is true' else, 'Flag is false'\n\n\n" +
+            "// write an if else statement that checks if 'number' is divisible by 15, then 22 and then print 'not divisible by 15 or 22'\n" +
+            "// if it's divisible by 15, print 'Number is divisible by 15', and if it's divisible by 22, print 'Number is divisible by 22'\n\n\n" 
+            
+        )
+    }
+
 
     render(){
         return(
@@ -104,7 +114,7 @@ class Conditionals extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

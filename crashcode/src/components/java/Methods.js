@@ -68,6 +68,13 @@ class Methods extends Component{
         }
     }
 
+    addText() {
+        return (
+            "// Practice Here! \n\n" +
+            "// write a method that takes in two values and returns the product of them"
+        )
+    }
+
 
     render(){
         return(
@@ -85,7 +92,7 @@ class Methods extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

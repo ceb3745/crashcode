@@ -68,6 +68,29 @@ class Operators extends Component{
         }
     }
 
+    addText() {
+        return (
+            "// Practice Here!\n\n" +
+            "int number = 15; \n\n" +
+            "// add 'number' by 3 \n\n\n" +
+            "System.out.println(number)\n\n" + 
+            "//increment 'number' using the increment operator\n\n\n" +
+            "System.out.println(number)\n\n" +
+            "// subtract 'number' by 6\n\n\n" +
+            "System.out.println(number)\n\n" + 
+            "// decrement 'number' using the decrement operator\n\n\n" +
+            "System.out.println(number)\n\n" + 
+            "// divide 'number' by 3\n\n\n" +
+            "System.out.println(number)\n\n" +
+            "// multiply number by 10\n\n\n" +
+            "System.out.println(number)\n\n"+
+            "// declare int called 'remainder'\n\n\n" +
+            "System.out.println(number)\n\n"+
+            "// set remainder to number modulus 18\n\n\n" +
+            "System.out.println(number)"
+        )
+    }
+
 
     render(){
         return(
@@ -87,7 +110,7 @@ class Operators extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

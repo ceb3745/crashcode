@@ -68,6 +68,15 @@ class Loops extends Component{
         }
     }
 
+    addText() {
+        return (
+            " Practice Here! \n\n" +
+            "// declare a for loop with an int called i starting at 0 and and incrementing until reaching 10 \n" +
+            "// print each value\n\n\n" +
+            "// do the same thing but with a while loop, and declare an int called 'x'\n// hint: don't forget to increment x"
+        )
+    }
+
 
     render(){
         return(
@@ -94,7 +103,7 @@ class Loops extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>

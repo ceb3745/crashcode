@@ -68,6 +68,23 @@ class Variables extends Component{
         }
     }
 
+    addText(){
+        return(
+            "//Practice here! \n \n \n" +
+            "// declare an int variable called 'number' \n \n \n" +
+            "// set int variable to 5 \n \n \n " + 
+            "//print number \n \n \n" + 
+            "// change value of 'number' to 15 \n \n \n" +
+            "//print number \n \n \n" + 
+            "//declare a String variable called hello\n \n \n" +
+            "// set value of hello to 'Hello World'\n \n \n" +
+            "//print hello\n \n \n" +
+            "//declare a boolean called 'flag'\n \n \n" +
+            "//set value of flag to true\n \n \n" + 
+            "//print flag\n \n \n"
+        )
+    }
+
 
     render(){
         return(
@@ -87,8 +104,7 @@ class Variables extends Component{
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here... 
-                            // declare an int variable called 'number'
+                            {this.addText()}
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
