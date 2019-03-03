@@ -74,18 +74,22 @@ class Variables extends Component{
     }
     addText(){
         return(
-            "//Practice here! \n \n \n" +
-            "// declare an int variable called 'number' \n \n \n" +
-            "// set int variable to 5 \n \n \n " + 
-            "//print number \n \n \n" + 
-            "// change value of 'number' to 15 \n \n \n" +
-            "//print number \n \n \n" + 
-            "//declare a String variable called hello\n \n \n" +
-            "// set value of hello to 'Hello World'\n \n \n" +
-            "//print hello\n \n \n" +
-            "//declare a boolean called 'flag'\n \n \n" +
-            "//set value of flag to true\n \n \n" + 
-            "//print flag\n \n \n"
+            "// Practice here! \n \n \n" +
+            "public class Main { \n" +
+            "   public static void main(String[] args){ \n" +
+            "   // declare an int variable called 'number' \n \n \n" +
+            "   // set int variable to 5 \n \n \n " + 
+            "   // print number \n \n \n" + 
+            "   // change value of 'number' to 15 \n \n \n" +
+            "   // print number \n \n \n" + 
+            "   // declare a String variable called hello\n \n \n" +
+            "   // set value of hello to 'Hello World'\n \n \n" +
+            "   // print hello\n \n \n" +
+            "   // declare a boolean called 'flag'\n \n \n" +
+            "   // set value of flag to true\n \n \n" + 
+            "   // print flag\n \n " +
+            "   } \n}"
+
         )
     }
 

@@ -76,23 +76,26 @@ class Operators extends Component{
     addText() {
         return (
             "// Practice Here!\n\n" +
-            "int number = 15; \n\n" +
-            "// add 'number' by 3 \n\n\n" +
-            "System.out.println(number)\n\n" + 
-            "//increment 'number' using the increment operator\n\n\n" +
-            "System.out.println(number)\n\n" +
-            "// subtract 'number' by 6\n\n\n" +
-            "System.out.println(number)\n\n" + 
-            "// decrement 'number' using the decrement operator\n\n\n" +
-            "System.out.println(number)\n\n" + 
-            "// divide 'number' by 3\n\n\n" +
-            "System.out.println(number)\n\n" +
-            "// multiply number by 10\n\n\n" +
-            "System.out.println(number)\n\n"+
-            "// declare int called 'remainder'\n\n\n" +
-            "System.out.println(number)\n\n"+
-            "// set remainder to number modulus 18\n\n\n" +
-            "System.out.println(number)"
+            "public class Main { \n" +
+            "   public static void main(String[] args){ \n" +
+            "     int number = 15; \n\n" +
+            "     // add 'number' by 3 \n\n\n" +
+            "     System.out.println(number)\n\n" + 
+            "     //increment 'number' using the increment operator\n\n\n" +
+            "     System.out.println(number)\n\n" +
+            "     // subtract 'number' by 6\n\n\n" +
+            "     System.out.println(number)\n\n" + 
+            "     // decrement 'number' using the decrement operator\n\n\n" +
+            "     System.out.println(number)\n\n" + 
+            "     // divide 'number' by 3\n\n\n" +
+            "     System.out.println(number)\n\n" +
+            "     // multiply number by 10\n\n\n" +
+            "     System.out.println(number)\n\n"+
+            "     // declare int called 'remainder'\n\n\n" +
+            "     System.out.println(number)\n\n"+
+            "     // set remainder to number modulus 18\n\n\n" +
+            "    System.out.println(number)\n" +
+            "   } \n}"
         )
     }
 

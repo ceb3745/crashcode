@@ -76,7 +76,14 @@ class Methods extends Component{
     addText() {
         return (
             "// Practice Here! \n\n" +
-            "// write a method that takes in two values and returns the product of them"
+            "// write a method that takes in two values and returns the product of them\n\n"+
+            "public class Main { \n" +
+            "   public static void main(String[] args){ \n" +
+            "   getProduct();\n" +
+            "   }\n\n" +
+            "   // write getProduct() here" +
+            "   hint: need to make it static to be able to call it in main()\n" +
+            "   \n}" 
         )
     }
 
