@@ -4,9 +4,9 @@ class About extends Component{
     render(){
         return(
             <div className="contentPage">
-                <div className="title">
-                    <h1> This is the about. </h1>
-                    <h2> Resources: </h2>
+                <div className="titleName">
+                    <h3> This is the about. </h3>
+                    <h4> Resources: </h4>
                     <ul>
                     <li>Paiza API </li>
                     </ul>

@@ -10,7 +10,7 @@ class Home extends Component{
         return(
             <div className="homePage">
                 <div className="title">
-                <h1> Welcome to crash_code. </h1>
+                <h1 className="welcome"> Welcome to crash_code. </h1>
                 </div>
                 <h2>Today I'm learning:</h2><h2>{this.props.language}</h2>
             </div>
