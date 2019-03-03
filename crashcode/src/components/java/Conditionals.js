@@ -57,17 +57,21 @@ class Conditionals extends Component{
             errormsg: result.stdout
         });
 
-        console.log(this.state.errormsg);
+        if(result.stdout === ''){
+            this.setState({
+                errormsg: "Invalid Code: Please Try Again"
+            })
+        }
+
     }
 
     returnMessage(){
         if(this.state.errormsg === ''){
-            return("Invalid Code: Please Try Again")
+            return("");
         }else{
             return(this.state.errormsg)
         }
     }
-
     addText() {
         return (
             "// Practice Here! \n\n" +
@@ -85,15 +89,15 @@ class Conditionals extends Component{
                 <h1 className="titleName">conditionals.java</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Conditionals are important when you want to do something only when a certain condition is met. 
+                        <p><span className="keywordC">Conditionals</span> are important when you want to do something only when a certain condition is met. 
                             This is normally done by checking a value of a variable (such as a boolean) and potentially comparing it to another value (such as an int). 
-                            The condition must return true in order for the code within the if statement to execute. 
-                            If there are more than one condition you want to check, simple add an ‘else if’ block. </p>
-                            <p>Common operators for comparing values are equals to (‘==‘), not equals to (‘!=‘), greater than (‘&#62;’), 
-                            less than (‘&#60;’), greater than or equal to (‘&ge;‘) and less than or equal to 
-                            (‘&le;‘). </p>
+                            The condition must return true in order for the code within the <span className="keywordC">if</span> statement to execute. 
+                            If there are more than one condition you want to check, simple add an <span className="keywordC">else if</span> block. </p>
+                            <p>Common operators for comparing values are <span className="keywordC">equals to (‘==‘)</span>, <span className="keywordC">not equals to (‘!=‘)</span>, <span className="keywordC">greater than (‘&#62;’)</span>, 
+                            <span className="keywordC">less than (‘&#60;’)</span>, <span className="keywordC">greater than</span> or <span className="keywordC">equal to (‘&ge;‘)</span> and <span className="keywordC">less than</span> or <span className="keywordC">equal to 
+                            (‘&le;‘). </span></p>
                             <p>To check if more than one condition is met (so that everything within the parentheses is true) 
-                            within the if statement, use the and (‘&amp;&amp;’) operator. If you have multiple conditions but only need one of them to be true use the or (‘||’) operator.</p>
+                            within the if statement, use the and <span className="keywordC">(‘&amp;&amp;’)  </span>operator. If you have multiple conditions but only need one of them to be true use the or <span className="keywordC">(‘||’)  </span>operator.</p>
                             <p>The basic structure for an if statement: </p>
                             <p className="code">if (check for condition here) &#123; <br /> //some code here <br />&#125; <br />
                             else if (check for condition here) &#123; <br /> //some code here <br /> &#125; <br />

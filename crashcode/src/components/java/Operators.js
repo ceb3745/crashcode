@@ -57,12 +57,17 @@ class Operators extends Component{
             errormsg: result.stdout
         });
 
-        console.log(this.state.errormsg);
+        if(result.stdout === ''){
+            this.setState({
+                errormsg: "Invalid Code: Please Try Again"
+            })
+        }
+
     }
 
     returnMessage(){
         if(this.state.errormsg === ''){
-            return("Invalid Code: Please Try Again")
+            return("");
         }else{
             return(this.state.errormsg)
         }
@@ -98,9 +103,9 @@ class Operators extends Component{
                 <h1 className="titleName">operators.java</h1>
                 <div className="container">
                     <div className="info">
-                        <p>In Java, the most common operators are divided into two types, Arithmetic Operators and Relational Operators (to compare values). 
-                            For basic arithmetic, addition, subtraction, multiplication and division, use the symbols for those operations (+, -, *, /). 
-                            The increment and decrement operators will be explained in the “Loops” section, and the relational operators will be explained in the “Conditionals” section. </p>
+                        <p>In Java, the most common operators are divided into two types, <span className="keywordO">Arithmetic Operators</span> and <span className="keywordO">Relational Operators</span> (to compare values). 
+                            For basic <span className="keywordO">arithmetic</span>, <span className="keywordO">addition</span>, <span className="keywordO">subtraction</span>, <span className="keywordO">multiplication</span> and <span className="keywordO">division</span>, use the symbols for those operations <span className="keywordO">(+, -, *, /).</span>
+                            The <span className="keywordO">increment</span> and <span className="keywordO">decrement</span> operators will be explained in the <span className="keywordO">“Loops”</span> section, and the relational operators will be explained in the <span className="keywordO">“Conditionals”</span> section. </p>
                         <p>To assign to an arithmetic on an int value, for example, simply include its symbol before an equals sign. </p>
                         <p>For example, if I declare an int variable x that equals 5, and I want to add 2 to it, I can do x +=2. 
                             You can also do the operation in their variable form if their types were defined already.</p>

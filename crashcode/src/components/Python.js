@@ -58,12 +58,17 @@ class Python extends Component{
             errormsg: result.stdout
         });
 
-        console.log(this.state.errormsg);
+        if(result.stdout === ''){
+            this.setState({
+                errormsg: "Invalid Code: Please Try Again"
+            })
+        }
+
     }
 
     returnMessage(){
         if(this.state.errormsg === ''){
-            return("Invalid Code: Please Try Again")
+            return("");
         }else{
             return(this.state.errormsg)
         }

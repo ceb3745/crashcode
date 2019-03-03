@@ -22,6 +22,19 @@ class Glossary extends Component{
                     <h2> Methods </h2>
                     <p>A block of statements to be ran. </p>
                     <p> Pro Tip: Methods should only do one specific thing </p>
+                    <h2>Char</h2>
+                    <p>A single numeric or alphabetic character</p>
+                    <h2>String</h2>
+                    <p>A series of characters</p>
+                    <h2>Boolean</h2>
+                    <p>Truth values (either true or false)</p>
+                    <h2>Int</h2>
+                    <p>A whole number that can be positive or negative</p>
+                    <h2>Float</h2>
+                    <p>A type of decimal number used for more precision</p>
+                    <h2>Double</h2>
+                    <p>A potentially very large decimal number that can be positive or negative</p>
+
                 </div>
                 </div>
         );
