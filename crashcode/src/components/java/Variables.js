@@ -75,7 +75,15 @@ class Variables extends Component{
                 <h1 className="titleName">variables.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>Basic variable types in Java include integers (int), 
+                            strings (String), doubles (double), floats (float), chars (char), and booleans (boolean). 
+                            An int is an integer (a whole number that can be positive or negative), a string is a set of characters (i.e ‘abc’) 
+                            that is surrounded by double quotation marks, floats are a type of decimal, chars are individual characters (i.e ‘c’), 
+                            and booleans can either be true or false.</p>
+                        <p>Each variable must be declared with its type and name before it can be used, such as ‘String string’. To assign it to a 
+                            value simply add an equals sign (‘=‘) after the name and then the value you’d like to set the variable to.</p>
+                        <p>Ex: </p>
+                        <p className="code">String string = “hello!”;</p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">

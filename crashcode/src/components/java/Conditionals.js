@@ -75,7 +75,31 @@ class Conditionals extends Component{
                 <h1 className="titleName">conditionals.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>Conditionals are important when you want to do something only when a certain condition is met. 
+                            This is normally done by checking a value of a variable (such as a boolean) and potentially comparing it to another value (such as an int). 
+                            The condition must return true in order for the code within the if statement to execute. 
+                            If there are more than one condition you want to check, simple add an ‘else if’ block. 
+                            Common operators for comparing values are equals to (‘==‘), not equals to (‘!=‘), greater than (‘&#62;’), 
+                            less than (‘&#60;’), greater than or equal to (‘&ge;‘) and less than or equal to 
+                            (‘&le;‘). To check if more than one condition is met (so that everything within the parentheses is true) 
+                            within the if statement, use the and (‘&amp;&amp;’) operator. If you have multiple conditions but only need one of them to be true use the or (‘||’) operator.</p>
+                            <p>The basic structure for an if statement: </p>
+                            <p className="code">if (check for condition here) &#123; <br /> //some code here <br />&#125; <br />
+                            else if (check for condition here) &#123; <br /> //some code here <br /> &#125; <br />
+                            else &#123; <br /> //some code here <br /> &#125; <br /> </p>
+                            <p>Note: If the condition is met in the ‘if’ block, the code in the ‘else if’ and ‘else’ won’t execute. 
+                                Also, if there are two if statements after each other, they can both execute if both their conditions are met. 
+                                So you can view the whole if else block as one executable bit of code. </p>
+                            <p>Ex: </p>
+                            <p className="code">if (value%2 == 0 &amp;&amp; value%3 == 0) &#123; <br /> </p>
+                            <p className="inner">System.out.println(“value is divisible by 6”); <br /> </p>
+                            <p className="code">&#125; <br /> 
+                            else if (value%2 == 0) &#123; <br /> </p>
+                            <p className="inner">System.out.println(“value is an even number”); <br /> </p>
+                            <p className="code">&#125; <br /> 
+                            else &#123; <br /> </p>
+                            <p className="inner">System.out.println(“value is not divisible by 6 or 2”); <br /> </p>
+                            <p className="code">&#125; <br /> </p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">

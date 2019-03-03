@@ -74,7 +74,11 @@ class Java extends Component{
                 <h1 className="titleName">crash_code.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <h2>General Info</h2>
+                        <p>After every executable line, a semicolon (‘;’) needs to be added before the program can run (or else the program won’t run). </p>
+                        <p>For statements that include multiple lines of code, curly braces (‘&#123;&#125;’) are needed. </p>
+                        <p>A console is where all of the errors are displayed, and if write print statements such as System.out.print().</p>
+
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">

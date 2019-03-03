@@ -75,7 +75,15 @@ class Operators extends Component{
                 <h1 className="titleName">operators.java</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <p>In Java, the most common operators are divided into two types, Arithmetic Operators and Relational Operators (to compare values). 
+                            For basic arithmetic, addition, subtraction, multiplication and division, use the symbols for those operations (+, -, *, /). 
+                            The increment and decrement operators will be explained in the “Loops” section, and the relational operators will be explained in the “Conditionals” section. </p>
+                        <p>To assign to an arithmetic on an int value, for example, simply include its symbol before an equals sign. </p>
+                        <p>For example, if I declare an int variable x that equals 5, and I want to add 2 to it, I can do x +=2. 
+                            You can also do the operation in their variable form if their types were defined already.</p>
+                        <p>Ex: </p>
+                        <p className="code">int x = 4; <br /> int y = 3; <br /> int z = x*y;</p>
+                        
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
