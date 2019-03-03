@@ -143,13 +143,31 @@ body{
   align-self: flex-start;
 }
 
-.definitions {
+#glossTerms {
+    display: flex;
+    flex-direction: row;
+        height: 500px;
+
+}
+
+.definitions1 {
+order: 1;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 80%;
+  width: 40%;
 
   text-align: left;
   margin-left: 60px;
+}
+
+.definitions2 {
+    order: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 40%;
+
+  text-align: left;
+  margin-left: 160px;
 }
 
 .title{

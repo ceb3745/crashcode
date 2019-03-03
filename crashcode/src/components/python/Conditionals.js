@@ -80,9 +80,9 @@ class Conditionals extends Component{
                 <h1 className="titleName">conditionals.py</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Boolean is a value that can only be True or False. We use them to check if conditions are true or not.</p>
+                        <p><span className="keywordC">Boolean</span> is a value that can only be True or False. We them to check if conditions are true or not.</p>
                         <p>We have the following operators that when used will tell us if the statement is True or False. We can also capture boolean values in variables. </p>
-                        <p><b><u>equals</u></b></p> 
+                        <p><b><u><span className="keywordC">equals</span></u></b></p> 
                         <p> a == b is True if a is equal to b
                             <br></br><br></br> Note: this is different than assigning a variable. Here we are performing the boolean operation 5 == 5 and then assigning that to a variable</p>
                     
@@ -99,7 +99,7 @@ class Conditionals extends Component{
                         <div className="code">True <br></br>False</div>
                         
                         
-                        <p><b><u>not equals</u></b></p>   
+                        <p><b><u><span className="keywordC">not equals</span></u></b></p>   
                         <p>a != b is True if a is not equal to b</p>
                         <p></p>
 
@@ -116,7 +116,7 @@ class Conditionals extends Component{
                         <div className="code">True <br></br>False</div>
 
 
-                        <p><b><u>less than</u></b></p>   
+                        <p><b><u><span className="keywordC">less than</span></u></b></p>   
                         <p>a &lt; b us True if a is less than b</p>
                         <p></p>
 
@@ -135,7 +135,7 @@ class Conditionals extends Component{
                         <p>Output:</p>
                         <div className="code">True <br></br>False<br></br>False</div>
 
-                        <p><u><b>less than or equal</b></u></p>   
+                        <p><u><b><span className="keywordC">less than or equal</span></b></u></p>   
                         <p>a &lt;= b is True if a less than or equal to b</p>
                         <p></p>
 
@@ -151,7 +151,7 @@ class Conditionals extends Component{
                         <p>Output:</p>
                         <div className="code">True <br></br>False</div>
 
-                        <p><u><b>greater than</b></u></p>   
+                        <p><u><b><span className="keywordC">greater than</span></b></u></p>   
                         <p>a &gt;= b is True if a greater than b</p>
                         <p></p>
 
@@ -168,7 +168,7 @@ class Conditionals extends Component{
                         <div className="code">True <br></br>False</div>
 
 
-                        <p><u><b>greater than or equal</b></u></p>   
+                        <p><u><b><span className="keywordC">greater than or equal</span></b></u></p>   
                         <p>a &gt;= b is True if a greater than or equal to b</p>
                         <p></p>
 
@@ -185,11 +185,11 @@ class Conditionals extends Component{
                         <div className="code">True <br></br>False</div>
 
                         <p>We can use these operators for conditional statements! Let's go over some keywords. </p>
-                        <p><br></br>One important thing we need to note first is that python is whitespace sensitive. This means that python uses whitespace to denote blocks, unlike 	&#123; 	&#125; in a language like Java.</p>
+                        <p><br></br>One important thing we need to note first is that python is <span className="keywordC">whitespace sensitive</span>. This means that python uses whitespace to denote blocks, unlike 	&#123; 	&#125; in a language like Java.</p>
                         <p>This basically means we need to indent the code that belongs to the conditional statements. Otherwise python won't know the code belongs to them.</p>
                             
                             
-                        <p><u><b>if statement</b></u></p>   
+                        <p><u><b><span className="keywordC">if statement</span></b></u></p>   
                         <p>We will use an if statement to only run a block of code if the statement is true</p>
                         <p></p>
 
@@ -210,7 +210,7 @@ class Conditionals extends Component{
                         <p>See how the code only runs the first block? This is because a is less than b, but b is not less than a. If statements allow us to run code only if a certain condition has been met. </p>
 
 
-                        <p><u><b>else statement</b></u></p>   
+                        <p><u><b><span className="keywordC">else statement</span></b></u></p>   
                         <p>Sometimes we still want something to happen if our if statement isn't true, this is where else statements come in. Else statements have to follow an if or an elif statement</p>
                         <p></p>
 
@@ -228,8 +228,8 @@ class Conditionals extends Component{
                         <p>Output:</p>
                         <div className="code">b is not equal to a. :[</div>
 
-                        <p><u><b>elif statement</b></u></p>   
-                        <p>This is short for else if. Sometimes you want to run one block of statements or another block of statements, but not both. This is where elif comes in, it always follows an if statement. An elif statement will only run if the if preceeding if statement is false. </p>
+                        <p><u><b><span className="keywordC">elif statement</span></b></u></p>   
+                        <p>This is short for <span className="keywordC">else if</span>. Sometimes you want to run one block of statements or another block of statements, but not both. This is where <span className="keywordC">elif</span> comes in, it always follows an if statement. An elif statement will only run if the if preceeding if statement is false. </p>
                         <p></p>
 
                         <p>Code:</p>
@@ -249,13 +249,13 @@ class Conditionals extends Component{
 
                         <p><b><u>Boolean Expressions</u></b></p>
 
-                        <p><b><u>and</u></b></p>
+                        <p><b><u><span className="keywordC">and</span></u></b></p>
                         <p> a and b <br></br>evaluates to True if a and b are both true </p>
 
-                        <p><b><u>or</u></b></p>
+                        <p><b><u><span className="keywordC">or</span></u></b></p>
                         <p> a or b <br></br>valuates to True if a is true or b is true. Only one of them needs to be true to run that block of code</p>
 
-                        <p><b><u>not</u></b></p>
+                        <p><b><u><span className="keywordC">not</span></u></b></p>
                         <p> a or b <br></br>gives the opposite of the answer to a <br></br>
  				                            if a is true then not a is false<br></br>
  				                            if a is false then not a is true
