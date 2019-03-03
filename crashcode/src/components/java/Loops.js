@@ -90,7 +90,7 @@ class Loops extends Component{
                 <div className="container">
                     <div className="info">
                         <p>If you want to do a process more than once, a <span className="keywordL">loop</span> is right for you! In Java, there are two common loops, a ‘for’ loop and a <span className="keywordL">while</span> loop. A for loop uses an int to keep track of how many times the block of code is ran.</p>
-                        <p>The part within the parentheses of the for loop consists of three statements, <span className="keywordL">an initialization</span>, <span className="keywordL">a testing condition</span>, and a the increment/decrement)</p>
+                        <p>The part within the parentheses of the for loop consists of three statements, <span className="keywordL">an initialization</span>, <span className="keywordL">a testing condition</span>, and the increment/decrement)</p>
                         <p>The <span className="keywordL">increment operator (‘++’)</span> increases the variable by 1 and the <span className="keywordL">decrement operator (‘--‘)</span> decreases the variable by 1. </p>
                         <p>Note: the <span className="keywordL">for</span> loop can be incremented or decremented by a value other than 1. </p>
                         <p>Ex: </p>

@@ -85,10 +85,10 @@ class Loops extends Component{
                 <h1 className="titleName">loops.py</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Loops are used when we need to do a set of instructions more than once. They run until some condition has met.</p>
+                        <p><span className="keywordL">Loops</span> are used when we need to do a set of instructions more than once. They run until some <span className="keywordL">condition</span> has met.</p>
                         <p><b><u>For Loops</u></b></p>
                         <p>for loops come in a few different flavors in python</p>
-                        <p><u>for in</u> - these are used to run through each element of an item</p>
+                        <p><u><span className="keywordL">for in</span></u> - these are used to run through each <span className="keywordL">element</span> of an item</p>
                         <p>for example we can loop through every character in a string</p>
                         <div className="code">
 
@@ -96,7 +96,7 @@ class Loops extends Component{
                                 <div className="inner">print(letter)</div>
                         </div>
 
-                        <p><u>for range</u> - this allows us to loop through a range of numbers. range always needs to know when to stop, but we can also specifiy where to start the range and how to count/step through the values</p>
+                        <p><u><span className="keywordL">for range</span></u> - this allows us to loop through a <span className="keywordL">range</span> of numbers. range always needs to know when to <span className="keywordL">stop</span>, but we can also specifiy where to <span className="keywordL">start</span> the range and how to <span className="keywordL">count/step</span> through the values</p>
                         
                         <p>First we will just give range a stop. Range will count up to but not include the stop value. Since we did not give a start value, it will start counting from 1 </p>
                         <div className="code">
@@ -119,7 +119,7 @@ class Loops extends Component{
                                 <div className="inner">print(number)</div>
                         </div>
 
-                        <p><b><u>While Loops</u></b></p>
+                        <p><b><u><span className="keywordL">While Loops</span></u></b></p>
                         <p>while loops will go until a certain condition is met. Usually we use a counter and have the loop execute that many times. So we need a variable to count for us. Make sure to increment this counter every time otherwise your loop will run forever!</p>
                         <div className="code">
                             # print 1 - 10  <br></br>
