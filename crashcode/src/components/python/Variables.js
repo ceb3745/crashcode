@@ -102,8 +102,7 @@ class Variables extends Component{
 
                     <p className="code">  my_cats_name = "The Kraken"</p>  
 
-
-                   <p> We can also reassign variables to contain new data. Say I changed my cat's name to Garfield and I want to change it. I can easily do that. </p>
+                    <p> We can also reassign variables to contain new data. Say I changed my cat's name to Garfield and I want to change it. I can easily do that. </p>
 
                     <p className="code">   my_cats_name = "Garfield" </p>
 
@@ -112,7 +111,7 @@ class Variables extends Component{
                    <p>We can print our variables to the console. The console is where you can see output from your code or error messages if something went wrong. On crashcode the console is the little box on the bottom right. To print to the console with python we use the print() command. Just put the variable to print between the () </p> 
 
                     <p className="code">print(my_cats_name)</p> 
-
+                    </div>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
