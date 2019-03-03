@@ -80,7 +80,7 @@ class Conditionals extends Component{
                 <h1 className="titleName">conditionals.py</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Boolean is a value that can only be True or False. We them to check if conditions are true or not.</p>
+                        <p>Boolean is a value that can only be True or False. We use them to check if conditions are true or not.</p>
                         <p>We have the following operators that when used will tell us if the statement is True or False. We can also capture boolean values in variables. </p>
                         <p><b><u>equals</u></b></p> 
                         <p> a == b is True if a is equal to b

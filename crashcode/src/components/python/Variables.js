@@ -84,7 +84,7 @@ class Variables extends Component{
                 <h1 className="titleName">variables.py</h1>
                 <div className="container">
                     <div className="info">
-                        <p> Variables are used to store value.</p>
+                        <p>  <span className="keywordV">Variables</span> are used to store a value.</p>
                         <p> It's kind of like placing something inside of a box.</p>
                         <p>We do this so we can easily access values later in our programs</p>
                         <p>If you have programmed in other languages, then you might've had to declare what type of data you plan to store in your variable. In Python we don't have to say what the variable will hold. We can just use it. </p>
@@ -92,17 +92,17 @@ class Variables extends Component{
                         <p>Examples:</p>
                         <p></p>
                         <p>We can assign many different types of data to a variable. Here are a few examples.</p>
-                        <p>	 We can assign an integer to a variable. </p>
+                        <p>	 We can assign an <span className="keywordV">integer</span> to a variable. </p>
                         <div className="code"> num_of_months = 12 </div>
-                        <p>We can assign floats to a variable.</p>
+                        <p>We can assign <span className="keywordV">floats</span> to a variable.</p>
                         <div className="code">weight_of_cat = 6.77</div>
-                        <p>We can also assign strings to a variable. Strings are sequences of characters.</p>
+                        <p>We can also assign strings to a variable. <span className="keywordV">Strings</span> are sequences of characters.</p>
                         <p>They're kind of like sentences. You know it's a string because it has " " marks around it.</p>
                         <div className="code">my_cats_name = "The Kraken"</div>
-                        <p>We can also reassign variables to contain new data. Say I changed my cat's name to Garfield and I want to change it. I can easily do that.</p>
+                        <p>We can also <span className="keywordV">reassign</span> variables to contain new data. Say I changed my cat's name to Garfield and I want to change it. I can easily do that.</p>
                         <div className="code">my_cats_name = "Crookshanks"</div>
-                        <p> Warning: Be careful to not reuse a variable name, unless you actually want to reassign it, otherwise your data will be lost! </p>
-                        <p>We can print our variables to the console. The console is where you can see output from your code or error messages if something went wrong.</p>
+                        <p><span className="keywordV"> Warning:</span> Be careful to not reuse a variable name, unless you actually want to reassign it, otherwise your data will be lost! </p>
+                        <p>We can print our variables to the console. The <span className="keywordV">console </span>is where you can see output from your code or error messages if something went wrong.</p>
                         <p>On crash_code the console is the box on the bottom right.</p>
                         <p>To print to the console with python we use the print( ) command. Just put the variable to print between the ( )</p>
 
