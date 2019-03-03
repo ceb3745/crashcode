@@ -238,7 +238,7 @@ body{
 .inputBox{
   resize: none;
   height: 100%;
-  width: 100%;
+  width: 98.5%;
   font-family: "Courier New";
 }
 
@@ -390,3 +390,30 @@ body{
   font-family: "Courier New";
   font-size: 17px;
 }
+
+.compileButton{
+  background-color: #88D279;
+  font-weight: bold;
+  color: white;
+  border-width: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  align-self: flex-end;
+  cursor: pointer;
+
+}
+
+.compileButton:hover{
+  transition: 1s;
+  background-color: #55bf40;
+}
+
+.compileButton:active{
+  transition: 0s;
+  background-color: #3c862d;
+}
+
+button:focus {outline:0;}
