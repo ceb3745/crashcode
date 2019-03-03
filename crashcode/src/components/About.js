@@ -10,11 +10,13 @@ class About extends Component{
                         Studies have shown that women who do not feel prepared for a task will be dissuaded from doing it.
                          crashcode's goal is to help people feel more prepared and confident in coding. </h5>
                     <h5>&#35;GIRLSWHOCODE</h5>
-                    <h6> Resources: 
+                    <h5> Resources: 
                     <ul>
                     <li>Paiza API </li>
+                    <li>w3schools.com</li>
+                    <li>css-tricks.com</li>
                     </ul>
-                    </h6>
+                    </h5>
                 </div>
             </div>
         );

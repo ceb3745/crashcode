@@ -77,7 +77,7 @@ class Java extends Component{
                         <h2>General Info</h2>
                         <p>After every executable line, a semicolon (‘;’) needs to be added before the program can run (or else the program won’t run). </p>
                         <p>For statements that include multiple lines of code, curly braces (‘&#123;&#125;’) are needed. </p>
-                        <p>A console is where all of the errors are displayed, and if write print statements such as System.out.print().</p>
+                        <p>A console is where all of the errors are displayed, and where you can view print statements such as from System.out.print().</p>
 
                     </div>
                     <div className="console">

@@ -76,7 +76,11 @@ class Javascript extends Component{
                 <h1 className="titleName">crash_code.js</h1>
                 <div className="container">
                     <div className="info">
-                        Info
+                        <h2>General Info</h2>
+                        <p>Although it's not necessary, it is good coding practice to include semicolons (‘;’) after each executable line</p>
+                        <p>For large blocks of code, use curly braces</p>
+                        <p>To print to the console, use console.log()</p>
+                        <p>Javascript also doesn't use data types</p>
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
