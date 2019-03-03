@@ -87,7 +87,7 @@ class Loops extends Component{
                 <div className="container">
                     <div className="info">
 
-                        <p><span className="keywordL">Loops</span> are used to run code multiple times. However, loops MUST END at some point. Loops that are infinite, or
+                        <p><span className="keywordL">Loops</span> are used to run code multiple times. However, loops MUST END at some point. Loops that are <span className="keywordL">infinite</span>, or
                             continue forever, will crash your program. In javascript, there are two main types of loops.</p>
 
                         <p>The first loop is the <span className="keywordL">while</span> loop. This loop will continue to run while its condition is true. For this example,

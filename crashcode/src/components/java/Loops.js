@@ -84,16 +84,16 @@ class Loops extends Component{
                 <h1 className="titleName">loops.java</h1>
                 <div className="container">
                     <div className="info">
-                        <p>If you want to do a process more than once, a loop is right for you! In Java, there are two common loops, a ‘for’ loop and a ‘while’ loop. A for loop uses an int to keep track of how many times the block of code is ran.</p>
-                        <p>The part within the parentheses of the for loop consists of three statements, an initialization, a testing condition, and a the increment/decrement)</p>
-                        <p>The increment operator (‘++’) increases the variable by 1 and the decrement operator (‘--‘) decreases the variable by 1. </p>
-                        <p>Note: the for loop can be incremented or decremented by a value other than 1. </p>
+                        <p>If you want to do a process more than once, a <span className="keywordL">loop</span> is right for you! In Java, there are two common loops, a ‘for’ loop and a <span className="keywordL">while</span> loop. A for loop uses an int to keep track of how many times the block of code is ran.</p>
+                        <p>The part within the parentheses of the for loop consists of three statements, <span className="keywordL">an initialization</span>, <span className="keywordL">a testing condition</span>, and a the increment/decrement)</p>
+                        <p>The <span className="keywordL">increment operator (‘++’)</span> increases the variable by 1 and the <span className="keywordL">decrement operator (‘--‘)</span> decreases the variable by 1. </p>
+                        <p>Note: the <span className="keywordL">for</span> loop can be incremented or decremented by a value other than 1. </p>
                         <p>Ex: </p>
                         <p className="code">for (int i = 0; i &lt; 5; ++i) &#123; <br /> </p>
                         <p className="inner">System.out.println(“Hi”); <br /></p>
                         <p className="code">&#125;  <br /></p>
                         <p>In this example, “Hi” will be printed 5 times. </p>
-                        <p>A while loop uses a boolean. A while loop will run until the condition within the parentheses is false. (A loop that is never turned to false is called an infinite loop and will run forever so avoid that condition!) A while loop and a for loop can do the same thing, just with different formatting. </p>
+                        <p>A <span className="keywordL">while</span> loop uses a <span className="keywordL">boolean</span>. A while loop will run until the condition within the parentheses is false. (A loop that is never turned to false is called an <span className="keywordL">infinite loop</span> and will run forever so avoid that condition!) A while loop and a for loop can do the same thing, just with different formatting. </p>
                         <p>(Same example from above)</p>
                         <p className="code">int i = 0; <br /> 
                         while (i &lt; 5)&#123; <br /> </p>

@@ -82,7 +82,7 @@ class Methods extends Component{
                 <h1 className="titleName">methods.java</h1>
                 <div className="container">
                     <div className="info">
-                        <p>Similar to variables, method headers (where the method is defined) requires the data type that the method returns (if the method doesn’t return a value, declare the method as void). </p>
+                        <p>Similar to variables, <span className="keywordM">method headers</span> (where the method is defined) requires the <span className="keywordM">data type</span> that the method <span className="keywordM">returns</span> (if the method doesn’t return a value, declare the method as void). </p>
                              <p>Returning a value means that when the method is run, a value is produced and can be used elsewhere. The first word in the method header is either public or private, which specifies where the method can be used. The second word is the data type and is followed by the method name and a set of parentheses. </p>
                                  <p>Inside any number of values can be inside the parentheses to be used within the method. Of course, the data type of the variables must be specified.</p>
                         <p>Ex:</p>
