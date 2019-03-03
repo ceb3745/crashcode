@@ -95,7 +95,7 @@ class Methods extends Component{
                         </div>
                         answer = cubed(3)<br></br>
                         print(answer)<br></br>
-                        answer2 = cubed(5)
+                        answer2 = cubed(5)<br></br>
                         print(answer2)
                         </div>
 
