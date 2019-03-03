@@ -78,7 +78,7 @@ class Loops extends Component{
             "// Practice Here! \n\n" +
             "public class Main { \n" +
             "   public static void main(String[] args){ \n" +
-            "      // declare a for loop with an int called i starting at 0 and and incrementing until // reaching 10 \n\n" +
+            "      // declare a for loop with an int called i starting at 0 and and incrementing until \n      //reaching 10 \n\n" +
             "      // print each value\n\n\n" +
             "      // do the same thing but with a while loop, and declare an int called 'x'\n      // hint: don't forget to increment x\n\n\n" +
             "   } \n}"
