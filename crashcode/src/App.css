@@ -285,6 +285,37 @@ body{
   width: 50%;
 }
 
+.innerNavSelected .navLink:nth-child(1) {
+  background-color: #4ecdc4;
+}
+
+.innerNavSelected .navLink:nth-child(2) {
+  background-color: #88D279;
+}
+
+.innerNavSelected .navLink:nth-child(3) {
+  background-color: #ffe66d;
+}
+
+.innerNavSelected .navLink:nth-child(4) {
+  background-color: #FFB56B;
+}
+
+.innerNavSelected .navLink:nth-child(5) {
+  background-color: #ff6b6b;
+}
+
+.innerNavSelected .navLink:nth-child(1):hover, .innerNavSelected .navLink:nth-child(2):hover,
+.innerNavSelected .navLink:nth-child(3):hover, .innerNavSelected .navLink:nth-child(4):hover,
+.innerNavSelected .navLink:nth-child(5):hover {
+  background-color: darkgray;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
 .rightNavSelected{
   width: 50%;
   justify-content: space-around;
@@ -328,9 +359,26 @@ body{
 body{
   overflow: hidden;
 }
-.keyword {
-  background-color: lightgrey;
+.keywordV {
+  background-color: #4ecdc4;
 }
+
+.keywordO {
+  background-color:  #88D279;
+}
+
+.keywordC {
+  background-color:  #ffe66d;
+}
+
+.keywordL {
+  background-color:  #FFB56B;
+}
+
+.keywordM {
+  background-color:  #ff6b6b;
+}
+
 .code{
   padding-left: 5px;
   font-family: "Courier New";

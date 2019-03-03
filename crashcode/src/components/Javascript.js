@@ -73,14 +73,14 @@ class Javascript extends Component{
     render(){
         return(
             <div className="contentPage">
-                <h1 className="titleName">crash_code.java</h1>
+                <h1 className="titleName">crash_code.js</h1>
                 <div className="container">
                     <div className="info">
                         Info
                     </div>
                     <div className="console">
                         <textarea id="consoleBox" onKeyDown={e => this.addTab(e)} className="inputBox">
-                            Type Code Here...
+                            This is where you'll practice!
                         </textarea>
                         <button className="compileButton" onClick={e => this.compileText(e)}>Compile</button>
                     </div>
